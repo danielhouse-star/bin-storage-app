@@ -1,12 +1,22 @@
 {
     "name": "Bin Storage App",
     "short_name": "BinApp",
-    "start_url": ".",
+    "start_url": "/bin-storage-app/",
+    "id": "/bin-storage-app/",
+    "scope": "/bin-storage-app/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons": [
-        { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }, // Make a simple icon
-        { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+        {
+            "src": "/bin-storage-app/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/bin-storage-app/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
     ]
 }
