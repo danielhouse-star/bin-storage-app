@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Storage App</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bin Storage App</h1>
+    
+    <!-- Add Item Form -->
+    <section>
+        <h2>Add Item</h2>
+        <input id="description" type="text" placeholder="Item description">
+        <input id="bin" type="text" placeholder="Bin (e.g., B100)" value="B100"> <!-- Auto-suggest starting value -->
+        <input id="shelf" type="text" placeholder="Shelf (e.g., S100)" value="S100">
+        <button onclick="addItem()">Add</button>
+    </section>
+    
+    <!-- Search -->
+    <section>
+        <h2>Search Items</h2>
+        <input id="keyword" type="text" placeholder="Keyword">
+        <button onclick="searchItems()">Search</button>
+        <ul id="results"></ul>
+    </section>
+    
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
